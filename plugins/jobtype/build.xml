@@ -129,7 +129,7 @@
         <fail message="Test failure detected, check test results." if="test.failed" />
     </target>
 
-	<target name="jars" depends="junit" description="Compile main source tree java files">
+	<target name="jars" depends="build" description="Compile main source tree java files">
 
 		<mkdir dir="${dist.jar.dir}" />
 		<jar destfile="${azkaban-jobtype-jar}">
